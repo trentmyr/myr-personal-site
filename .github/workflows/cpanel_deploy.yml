@@ -16,6 +16,7 @@ jobs:
           hostname: 'https://trentmyr.dev'
           repository_root: '/home/trenlqan/repositories/myr-personal-site'
           branch: main
+          cpanel_username: '${{ vars.CPANEL_TOKEN }}'
           cpanel_token: '${{ secrets.CPANEL_TOKEN }}'
       - name: echo deploy-duration
         run: echo "Deployment took ${{ steps.deploy.outputs.duration }} milliseconds"
