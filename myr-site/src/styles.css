@@ -15,6 +15,15 @@ h6 {
   font-family: "Hanuman";
 }
 
+h1 {
+  font-size: 40px;
+}
+
+h2 {
+  font-size: 30px;
+  font-weight: normal;
+}
+
 p {
   margin: 0;
 }
@@ -53,7 +62,7 @@ footer {
 
 .content {
   display: flex;
-  margin: 82px auto 32px;
+  margin: 16px auto;
   padding: 0 16px;
   max-width: 960px;
   flex-direction: column;
