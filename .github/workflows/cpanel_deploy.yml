@@ -1,22 +1,22 @@
-name: Deploy to cPanel
-run-name: Deploy to cPanel by @${{ github.actor }}
-on:
-  push:
-    branches:
-      - "main"
+# name: Deploy to cPanel
+# run-name: Deploy to cPanel by @${{ github.actor }}
+# on:
+#   push:
+#     branches:
+#       - "main"
 
-jobs:
-  deploy:
-    runs-on: ubuntu-latest
-    steps:
-      - name: Deploy to cPanel
-        id: deploy
-        uses: pinkasey/cpanel-deploy-action@v1.1.2
-        with:
-          hostname: "https://trentmyr.dev"
-          repository_root: "/home/trenlqan/site-code"
-          branch: main
-          cpanel_username: "${{ vars.CPANEL_USERNAME }}"
-          cpanel_token: "${{ secrets.CPANEL_TOKEN }}"
-      - name: echo deploy-duration
-        run: echo "Deployment took ${{ steps.deploy.outputs.duration }} milliseconds"
+# jobs:
+#   deploy:
+#     runs-on: ubuntu-latest
+#     steps:
+#       - name: Deploy to cPanel
+#         id: deploy
+#         uses: pinkasey/cpanel-deploy-action@v1.1.2
+#         with:
+#           hostname: "https://trentmyr.dev"
+#           repository_root: "/home/trenlqan/site-code"
+#           branch: main
+#           cpanel_username: "${{ vars.CPANEL_USERNAME }}"
+#           cpanel_token: "${{ secrets.CPANEL_TOKEN }}"
+#       - name: echo deploy-duration
+#         run: echo "Deployment took ${{ steps.deploy.outputs.duration }} milliseconds"
