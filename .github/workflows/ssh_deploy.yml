@@ -28,6 +28,6 @@ jobs:
           target-server: 198.54.116.208
           remote-user: trenlqan
           ssh-port: 21098
-          private-ssh-key: ${{ secrets.SSH_KEY }}
+          private-ssh-key: ${{ secrets.CPANEL_SSH_PK }}
           source-path: ./dist/myr-site/
           destination-path: ~/home/trenlqan/public_html/
