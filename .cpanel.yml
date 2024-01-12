@@ -1,5 +1,5 @@
 # ---
-# deployment:
-#   tasks:
-#     - export DEPLOYPATH=/home/trenlqan/public_html
-#     - /bin/cp -R dist/myr-site $DEPLOYPATH
+deployment:
+  tasks:
+    - export DEPLOYPATH=/home/trenlqan/public_html
+    - /bin/cp -R dist/myr-site $DEPLOYPATH
