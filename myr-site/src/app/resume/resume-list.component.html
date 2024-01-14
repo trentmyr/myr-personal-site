@@ -1,44 +1,11 @@
-<style>
-  h1 {
-    text-align: center;
-  }
+<div class="resumeCard" *ngFor="let experience of experiences; last as isLast">
+  <div class="cardHeader">
+    <h3 style="font-weight: bold;">{{ experience.name }}</h3>
+    <p style="margin: auto 0">{{ experience.dateRangeString() }}</p>
+  </div>
+  <p>{{ experience.position }}</p>
+  <div>
 
-  .resumeTitle {
-    text-align: start;
-  }
-
-  .resumeCard {
-    all: unset;
-    border-radius: 4px;
-    border: 1px solid #eee;
-    max-width: 400px;
-    margin-bottom: 16px;
-    padding: 16px;
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: start;
-    transition: all 0.2s ease-in-out;
-    line-height: 24px;
-  }
-
-  .experienceDateRange {
-    display: flex;
-    flex-direction: row;
-    align-items: center;
-  }
-</style>
-
-<div>
-  <body style="width: 100%">
-    <div class="resumeCard" *ngFor="let experience of experiences">
-      <h2 class="resumeTitle">{{ experience.name }}</h2>
-      <div class="experienceDateRange">
-        <h4>{{ experience.startDate.toLocaleDateString() }}</h4>
-        <h4>
-          {{ experience.endDate?.toLocaleDateString() ?? "Current" }}
-        </h4>
-      </div>
-    </div>
-  </body>
+  </div>
+  <span *ngIf="!isLast">&nbsp;</span>
 </div>

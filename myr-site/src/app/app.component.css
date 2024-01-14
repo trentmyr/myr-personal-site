@@ -52,3 +52,11 @@ a:hover {
 .placeholder-text {
   justify-content: center;
 }
+
+.cardHeader {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  width: 100%;
+  overflow: auto;
+}
