@@ -1,5 +1,6 @@
 import {Component, Inject, LOCALE_ID, OnInit} from '@angular/core';
 import {Experience} from '../data/Experience';
+import {Language, imageSource} from "../data/Language";
 
 @Component({
   selector: 'resume-list',
@@ -14,4 +15,7 @@ export class ResumeList implements OnInit {
   ngOnInit(): void {
     this.experiences = Experience.getAll(this.locale)
   }
+
+  protected readonly imageSource = imageSource;
+  protected readonly Language = Language;
 }
