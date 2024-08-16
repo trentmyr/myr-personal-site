@@ -1,16 +1,18 @@
 <div class="resumeCard" *ngFor="let experience of experiences; last as isLast">
-  <div class="resumeHeader">
-    <p class="companyTitle">{{ experience.name }}</p>
-    <p style="margin: auto 0">{{ experience.dateRangeString() }}</p>
-  </div>
-  <p>{{ experience.position }}</p>
-  <p class="experienceDescription">{{ experience.description }}</p>
-  <div class="flexRow">
-    <img class="languageChip"
-         *ngFor="let language of experience.languages"
-         ngSrc="{{ imageSource(language) }}"
-         height="25" width="25" alt="{{ language.toString() }}"/>
-    <p class="skillChip" *ngFor="let skill of experience.skills">{{ skill }}</p>
-  </div>
-  <span *ngIf="!isLast">&nbsp;</span>
+    <div class="resumeHeader">
+        <p class="companyTitle">{{ experience.name }}</p>
+        <p style="margin: auto 0">{{ experience.dateRangeString() }}</p>
+    </div>
+    <p>{{ experience.position }}</p>
+    <div class="experienceDescriptionsStack">
+        <p class="experienceDescription" *ngFor="let description of experience.descriptions">{{ description }}</p>
+    </div>
+    <div class="flexRow">
+        <img class="languageChip"
+             *ngFor="let language of experience.languages"
+             ngSrc="{{ imageSource(language) }}"
+             height="25" width="25" alt="{{ language.toString() }}"/>
+        <p class="skillChip" *ngFor="let skill of experience.skills">{{ skill }}</p>
+    </div>
+    <span *ngIf="!isLast">&nbsp;</span>
 </div>
