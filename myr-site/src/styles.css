@@ -47,19 +47,6 @@ footer {
   flex: 1;
 }
 
-.toolbar {
-  position: absolute;
-  top: 0;
-  left: 0;
-  right: 0;
-  height: 60px;
-  display: flex;
-  align-items: center;
-  background-color: black;
-  color: white;
-  font-weight: 600;
-}
-
 .content {
   display: flex;
   margin: 16px auto;
