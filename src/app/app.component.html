@@ -1,58 +1,27 @@
-<div role="main">
-  <header>
-    <div class="headerContent" style="grid-column-start: 2">
-      <h1 style="margin: 0">Trent Meyer</h1>
-      <p>Software Engineer</p>
+<!-- TODO: evaluate "content" for usefulness -->
+<div role="main" class="content">
+  <div class="outerContainer">
+    <div class="header">
+      <!--  TODO: Picture of me ?  -->
+      <h2>.picture.</h2>
+      <h1>Trent Meyer</h1>
+      <h4>Software Engineer</h4>
     </div>
-
-    <div class="headerContentLinks">
-      <a
-        class="headerLink"
-        href="https://www.linkedin.com/in/trent-meyer/"
-        target="_blank"
-        rel="noopener noreferrer"
-      >
-        <img
-          ngSrc="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/linkedin/linkedin-original.svg"
-          height="20" width="20" alt="LinkedIn Link"/>
-
-      </a
-      >
-      <a
-        class="headerLink"
-        href="https://github.com/trentmyr/"
-        target="_blank"
-        rel="noopener noreferrer"
-      >
-        <img
-          src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/github/github-original.svg"
-          height="20" width="20" alt="Github Link"/>
-      </a
-      >
+    <!-- TODO: list of articles (TBD)  -->
+    <div class="articles">
+      <div class="article">
+        <h3>[Blog Post]</h3>
+        <p>The Future</p>
+      </div>
     </div>
-  </header>
-  <div class="content">
-<!--    <div class="horizontal-fill">-->
-<!--      <h2>Projects</h2>-->
-<!--      <span class="separator-line"></span>-->
-<!--    </div>-->
-<!--    <h3 class="placeholder-text">WIP...</h3>-->
-    <div class="horizontal-fill">
-      <h2>Experiences</h2>
-      <span class="separator-line"></span>
+    <div class="quickLinks">
+      <a href="https://github.com/trentmyr" target="_blank">github</a>
+      <a href="https://www.linkedin.com/in/trent-meyer/" target="_blank">linkedin</a>
+      <!--      <a>experience</a>-->
+      <a href="mailto:self@trentmyr.dev">contact me</a>
     </div>
-    <resume-list></resume-list>
   </div>
-
-  <!-- <footer>
-    <a
-      href="https://github.com/trentmyr/myr-personal-site"
-      target="_blank"
-      rel="noopener noreferrer"
-      style="color: #383838"
-      >Source</a
-    >
-  </footer> -->
 </div>
+
 
 <router-outlet></router-outlet>
