@@ -1,6 +1,0 @@
----
-deployment:
-  tasks:
-    - export DEPLOYPATH=/home/trenlqan/public_html
-    - /bin/rm -R $DEPLOYPATH
-    - /bin/cp -R myr-site/dist/myr-site/. $DEPLOYPATH
