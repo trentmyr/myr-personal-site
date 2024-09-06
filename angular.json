@@ -63,10 +63,10 @@
           "builder": "@angular-devkit/build-angular:dev-server",
           "configurations": {
             "production": {
-              "buildTarget": "trentmyr.github.io:build:production"
+              "buildTarget": "myr-personal-site:build:production"
             },
             "development": {
-              "buildTarget": "trentmyr.github.io:build:development"
+              "buildTarget": "myr-personal-site:build:development"
             }
           },
           "defaultConfiguration": "development"
@@ -74,7 +74,7 @@
         "extract-i18n": {
           "builder": "@angular-devkit/build-angular:extract-i18n",
           "options": {
-            "buildTarget": "trentmyr.github.io:build"
+            "buildTarget": "myr-personal-site:build"
           }
         },
         "test": {

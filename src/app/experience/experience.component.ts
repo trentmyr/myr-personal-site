@@ -3,11 +3,11 @@ import {Experience} from '../data/Experience';
 import {Language, imageSource} from "../data/Language";
 
 @Component({
-  selector: 'resume-list',
-  templateUrl: './resume-list.component.html',
-  styleUrls: ['./resume-list.component.css'],
+  selector: 'experience',
+  templateUrl: './experience.component.html',
+  styleUrls: ['./experience.component.css'],
 })
-export class ResumeList implements OnInit {
+export class ExperienceComponent implements OnInit {
   experiences: Experience[] = [];
 
   constructor(@Inject(LOCALE_ID) private readonly locale: string) { }

@@ -1,22 +1,25 @@
 import {NgModule} from '@angular/core';
 import {BrowserModule} from '@angular/platform-browser';
 
-import {AppRoutingModule} from './app-routing.module';
+import {AppRoutes, routes} from './app.routes';
 import {AppComponent} from './app.component';
-import {ResumeList} from './resume/resume-list.component';
+import {ExperienceComponent} from './experience/experience.component';
 import {NgOptimizedImage} from "@angular/common";
+import {provideRouter} from "@angular/router";
 
 @NgModule({
     declarations: [
         AppComponent,
-        ResumeList
+        ExperienceComponent
     ],
     imports: [
         BrowserModule,
-        AppRoutingModule,
+        AppRoutes,
         NgOptimizedImage
     ],
-    providers: [],
+    providers: [
+        provideRouter(routes)
+    ],
     bootstrap: [AppComponent]
 })
 export class AppModule {
