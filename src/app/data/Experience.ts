@@ -7,7 +7,6 @@ export class Experience {
     startDate: Date
     endDate: Date | null
     descriptions: string[]
-    // TODO: languages? could be a list of enum and then load icons?
     languages: Language[]
     skills: string[]
     locale: string

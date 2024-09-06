@@ -12,7 +12,7 @@
         "build": {
           "builder": "@angular-devkit/build-angular:browser",
           "options": {
-            "outputPath": "dist/myr-personal-site",
+            "outputPath": "dist/",
             "index": "src/index.html",
             "main": "src/main.ts",
             "polyfills": "src/polyfills.ts",
@@ -63,10 +63,10 @@
           "builder": "@angular-devkit/build-angular:dev-server",
           "configurations": {
             "production": {
-              "buildTarget": "myr-personal-site:build:production"
+              "buildTarget": "trentmyr.github.io:build:production"
             },
             "development": {
-              "buildTarget": "myr-personal-site:build:development"
+              "buildTarget": "trentmyr.github.io:build:development"
             }
           },
           "defaultConfiguration": "development"
@@ -74,7 +74,7 @@
         "extract-i18n": {
           "builder": "@angular-devkit/build-angular:extract-i18n",
           "options": {
-            "buildTarget": "myr-personal-site:build"
+            "buildTarget": "trentmyr.github.io:build"
           }
         },
         "test": {
@@ -92,6 +92,15 @@
               "src/styles.css"
             ],
             "scripts": []
+          }
+        },
+        "deploy": {
+          "builder": "angular-cli-ghpages:deploy",
+          "options": {
+            "repo": "git@github.com:trentmyr/trentmyr.github.io.git",
+            "dir": "dist/",
+            "baseHref": "/",
+            "cname": "trentmyr.dev"
           }
         }
       }
