@@ -14,11 +14,11 @@
   row-gap: var(--spacing-small);
 
   h1 {
-    color: var(--md-sys-color-primary)
+    color: light-dark(var(--color-light-primary), var(--color-dark-primary))
   }
 
   h4 {
-    color: var(--md-sys-color-secondary)
+    color: light-dark(var(--color-light-secondary), var(--color-dark-secondary));
   }
 }
 
@@ -39,15 +39,15 @@
   border-style: solid;
   border-width: 2px;
   border-radius: 5px;
-  border-color: var(--md-sys-color-background);
+  border-color: light-dark(var(--color-light-background), var(--color-dark-background));
 
   p {
-    color: var(--md-sys-color-secondary);
+    color: light-dark(var(--color-light-secondary), var(--color-dark-secondary));
   }
 }
 
 .article:hover {
-  border-color: var(--md-sys-color-primary);
+  border-color: light-dark(var(--color-light-primary), var(--color-dark-primary));
 }
 
 .quickLinks {
@@ -60,7 +60,7 @@
   a,
   a:visited,
   a:hover {
-    color: var(--md-sys-color-primary);
+    color: light-dark(var(--color-light-primary), var(--color-dark-primary));
     text-decoration: none;
     cursor: pointer;
   }
