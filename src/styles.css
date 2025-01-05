@@ -6,6 +6,10 @@ TODO: either find out how to import theme variables, or move/remove the files
 right now all the themes will be include in build output (see angular.json) which is not ideal
 */
 
+/*:root {*/
+/*  color-scheme: light dark;*/
+/*}*/
+
 @media (prefers-color-scheme: light) {
   :root {
     --md-sys-color-primary: rgb(143 74 77);

@@ -50,10 +50,11 @@ export class Experience {
                 [
                     'Developed, tested, and deployed changes for iOS and Android applications',
                     'Utilized Kotlin Multiplatform to share logic and UI between iOS and Android',
-                    'Communicated with physical devices from mobile apps using Bluetooth LE'
+                    'Communicated with physical devices from mobile apps using Bluetooth LE',
+                    'Maintain and improve an ASP.NET website hosted in Azure'
                 ],
-                [Language.kotlin, Language.swift],
-                ["Bluetooth", "Jetpack Compose", "SwiftUI", "Jetpack Room", "CoreData"],
+                [Language.kotlin, Language.swift, Language.csharp],
+                ["Bluetooth", "Jetpack Compose", "SwiftUI", "Jetpack Room", "CoreData", "ASP.NET",],
                 locale
             ),
             new Experience(
@@ -62,14 +63,26 @@ export class Experience {
                 new Date(2020, 5, 1),
                 new Date(2023, 1, 1),
                 [
-                    'Maintain and improve a Swift iOS app, Kotlin Android app, and C# .NET Framework API',
+                    'Maintained and improved a Swift iOS app, Kotlin Android app, and C# .NET Framework API',
                     'Innovated on existing architectures, bringing SwiftUI and GraphQL into the products'
                 ],
-                [Language.swift, Language.kotlin, Language.csharp],
+                [Language.kotlin, Language.swift, Language.csharp],
                 ["UIKit", "SwiftUI", "ReactiveX", ".NET", "Rest API", "GraphQL"],
                 locale
             ),
-            // TODO: add Precision Strip
+            new Experience(
+                'Precision Strip Inc.',
+                'Software Developer',
+                new Date(2020, 1, 1),
+                new Date(2021, 8, 1),
+                [
+                    'Maintained and improved a NativeScript mobile app written in Typescript with Angular',
+                    'Developed front-end programs and back-end queries using Progress OpenEdge'
+                ],
+                [Language.typescript],
+                ["Angular", "Progress OpenEdge"],
+                locale
+            )
         ]
     }
 }
