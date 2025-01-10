@@ -1,0 +1,17 @@
+### Hello!
+
+I'm Trent Meyer, a 25-year-old software engineer based in Cincinnati Ohio. Thanks for checking out my website! Here you'll find information about my work history, recent projects, and personal interests.
+
+### My Journey
+
+In my sophomore year of high school I signed up for a website-building competition, offered from the Business Professionals of America. I enjoyed it a lot and signed up for AP computer science the following year. Learning Java in that class was so much fun that I ended up applying to the University of Cincinnati where I would go on to get a bachelors of science in computer science.
+
+At UC, computer science is a 5 year program where you alternate between study and practical experience (co-op). My first two co-op experiences were at [Precision Strip Inc](https://www.precision-strip.com/) (PSI) where I learned what professional programming really looks like. During those two semesters I learned how to make desktop applications and construct/debug database queries. This was all done with a proprietary language called [OpenEdge](https://www.progress.com/openedge), made by [Progress](https://www.progress.com/).
+
+My last three co-ops were with [London Computer Systems](https://www.lcs.com/) (LCS). At LCS I learned mobile app development and how large engineering teams work together. I began as an iOS-only developer. Starting small with bug fixes, working all the way up to introducing SwiftUI to the app. After becoming comfortable with Swift/iOS, I began working on the C#/ASP.NET REST API that interfaced with the mobile app. Here and there I did a few Kotlin/Android tickets to establish breadth of knowledge.
+
+When I wasn't on co-op, I worked part-time for PSI on their TypeScript mobile app. This was only possible after establishing my mobile development skills at LCS. In my last semester of college I switched from part-time at PSI to part-time at LCS, as I had accepted my first full-time role with them. My first year out of college was spent working full-time at LCS. This was largely a continuation of the work I was doing during co-ops and part-time. I was primarily an iOS developer with occasional work on the API, somewhere around a 70/30 split.
+
+In January of 2023 I left LCS to go work for [Transducers Direct](https://transducersdirect.com/) (TD), where I am today. This role has been far different from my previous positions, as I work alone on almost everything. Here I've assumed the role as developer of an Android app and an iOS app. Over time my responsibilities expanded into developing for an ASP.NET website & REST API, as well as managing the Azure configuration.
+
+While at TD I've outgrown the developer title and have assumed "engineer". While the difference is mostly semantics, I believe its a worthy distinction. This role has pushed me past simply squashing bugs and implementing new features. I've designed new projects from the ground up, where architecture is crucial. Most notably is the [Kotlin Multiplatform](https://www.jetbrains.com/kotlin-multiplatform/) library I designed to share UI and business logic between the Android and iOS applications. It was quite the challenge to create a library whose individual components felt natural on the native platform, while supporting future development and maintaining backwards compatiblity. Along with this library, I've rearchitected the apps themselves to follow best-practices for Android and iOS respectively.
