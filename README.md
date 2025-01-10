@@ -2,4 +2,4 @@
 
 Blog posts (eventually) and info about me. Nothing fancy.
 
-Framework is Angular v17
+Framework is Angular v19
