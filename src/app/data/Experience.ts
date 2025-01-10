@@ -2,40 +2,24 @@ import {formatDate} from "@angular/common";
 import {Language} from "./Language";
 
 export class Experience {
-    name: string = ''
-    position: string = ''
-    startDate: Date
-    endDate: Date | null
-    descriptions: string[]
-    languages: Language[]
-    skills: string[]
-    locale: string
-    dateFormat = 'MMM \'\'yy'
+    private static dateFormat = 'MMM \'\'yy'
 
-    constructor(
-        name: string,
-        position: string,
-        startDate: Date,
-        endDate: Date | null = null,
-        description: string[],
-        languages: Language[],
-        skills: string[],
-        locale: string
+    private constructor(
+        public name: string,
+        public position: string,
+        public startDate: Date,
+        public endDate: Date | null = null,
+        public descriptions: string[],
+        public languages: Language[],
+        public skills: string[],
+        public locale: string
     ) {
-        this.name = name
-        this.position = position
-        this.startDate = startDate
-        this.endDate = endDate
-        this.descriptions = description
-        this.languages = languages
-        this.skills = skills
-        this.locale = locale
     }
 
     dateRangeString(): String {
-        let startString = formatDate(this.startDate, this.dateFormat, this.locale)
+        let startString = formatDate(this.startDate, Experience.dateFormat, this.locale)
         let endString = this.endDate != null
-            ? formatDate(this.endDate, this.dateFormat, this.locale)
+            ? formatDate(this.endDate, Experience.dateFormat, this.locale)
             : 'Current'
         return `${startString} - ${endString}`
     }

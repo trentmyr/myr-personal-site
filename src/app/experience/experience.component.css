@@ -22,11 +22,6 @@ h1 {
   align-content: baseline;
 }
 
-.companyTitle {
-  font-weight: bold;
-  font-size: x-large;
-}
-
 .experienceDescriptionsStack {
   display: flex;
   flex-direction: column;

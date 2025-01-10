@@ -6,6 +6,8 @@ import {AppComponent} from './app.component';
 import {ExperienceComponent} from './experience/experience.component';
 import {NgOptimizedImage} from "@angular/common";
 import {provideRouter} from "@angular/router";
+import {provideMarkdown} from "ngx-markdown";
+import {HttpClient, provideHttpClient} from "@angular/common/http";
 
 @NgModule({
     declarations: [
@@ -18,7 +20,11 @@ import {provideRouter} from "@angular/router";
         NgOptimizedImage
     ],
     providers: [
-        provideRouter(routes)
+        provideRouter(routes),
+        provideHttpClient(),
+        provideMarkdown({
+            loader: HttpClient,
+        })
     ],
     bootstrap: [AppComponent]
 })

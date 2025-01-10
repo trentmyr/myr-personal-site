@@ -1,0 +1,12 @@
+<!-- TODO: breadcrumbs "Home > Posts >  -->
+<div class="content">
+  <header>
+    <h1>{{ post?.title }}</h1>
+    <h3>{{ post?.lastUpdateDateString() }}</h3>
+  </header>
+  <markdown
+    class="postContent"
+    [src]="post?.getFilePath()"
+  />
+  <p>First published on {{ post?.firstPublishedDateString() }}</p>
+</div>

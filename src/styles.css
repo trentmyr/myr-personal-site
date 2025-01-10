@@ -117,6 +117,26 @@ html {
   background-color: light-dark(var(--color-light-background), var(--color-dark-background));
 }
 
+/* Preferred text size usages:
+H1 for title
+H3 for sub-title & contained content title (rows, sub-sections)
+P otherwise
+Use color for separation.
+H1, don't ever change color, use default.
+H3, use default when inner content, set to secondary when sub-title
+P, adjust as necessary. Main content keep default, use secondary for meta/alt content
+*/
+
+/* Shorthand to easily apply primary light-dark color in HTML */
+.colorPrimary {
+  color: light-dark(var(--color-light-primary), var(--color-dark-primary));
+}
+
+/* Shorthand to easily apply secondary light-dark color in HTML */
+.colorSecondary {
+  color: light-dark(var(--color-light-secondary), var(--color-dark-secondary));
+}
+
 h1,
 h2,
 h3,
@@ -129,12 +149,16 @@ h6 {
 }
 
 h1 {
-  font-size: 40px;
+  font-size: xxx-large;
+  color: light-dark(var(--color-light-primary), var(--color-dark-primary));
 }
 
 h2 {
-  font-size: 30px;
-  font-weight: normal;
+  font-size: xx-large;
+}
+
+h3 {
+  font-size: x-large;
 }
 
 p {
@@ -143,7 +167,36 @@ p {
   white-space: pre-line;
 }
 
-.content {
+a,
+a:visited,
+a:hover {
+  color: light-dark(var(--color-light-primary), var(--color-dark-primary));
+  cursor: pointer;
+}
+
+a,
+a:visited {
+  text-decoration: none;
+}
+
+a:hover {
+  text-decoration: underline;
+}
+
+header {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  row-gap: var(--spacing-small);
+
+  h3 {
+    color: light-dark(var(--color-light-secondary), var(--color-dark-secondary));
+  }
+}
+
+/* Applied by root HTML, do not use otherwise */
+.rootContent {
   box-sizing: border-box;
   display: flex;
   margin: 16px auto;
@@ -153,12 +206,26 @@ p {
   align-items: center;
 }
 
+/* Page content wrapper for consistent alignment and arrangement */
+.content {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  row-gap: var(--spacing-medium);
+}
+
+/* Increase regular content row gap */
+.largeRowGap {
+  row-gap: var(--spacing-large);
+}
+
+/* Standard flex row for content that is expected to wrap */
 .flexRow {
   display: flex;
   flex-direction: row;
   flex-wrap: wrap;
   align-content: center;
-  column-gap: 8px;
-  row-gap: 8px;
+  gap: 8px;
 }
 

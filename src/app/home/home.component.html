@@ -1,22 +1,23 @@
-<div class="outerContainer">
-  <div class="header">
+<div class="content largeRowGap">
+  <header>
     <img
       style="border-style: solid; border-width: 0; border-radius: 100px"
       ngSrc="https://trentmyr-public.s3.amazonaws.com/engage_solo.JPG"
       alt="Picture of Trent Meyer"
       width="210"
       height="207"
+      priority
     >
     <h1>Trent Meyer</h1>
-    <h4>Software Engineer</h4>
+    <h3>Software Engineer</h3>
+  </header>
+  <div class="articles">
+    <div class="article" [routerLink]="['/posts', post.filename]" *ngFor="let post of pinnedPosts">
+      <h3>{{ post.title }}</h3>
+      <p class="colorSecondary">{{ post.lastUpdateDateString() }}</p>
+    </div>
+    <!--  TODO: all posts link  -->
   </div>
-  <!-- TODO: list of articles (TBD)  -->
-<!--  <div class="articles">-->
-<!--    <div class="article">-->
-<!--      <h3>[Blog Post]</h3>-->
-<!--      <p>The Future</p>-->
-<!--    </div>-->
-<!--  </div>-->
   <div class="quickLinks">
     <a routerLink="/experience">work experience</a>
     <a href="https://github.com/trentmyr" target="_blank">github</a>

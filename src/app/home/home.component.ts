@@ -1,6 +1,7 @@
 import {Component} from "@angular/core";
 import {RouterLink} from "@angular/router";
-import {NgOptimizedImage} from "@angular/common";
+import {NgForOf, NgOptimizedImage} from "@angular/common";
+import {Post} from "../data/Post";
 
 @Component({
     selector: 'home',
@@ -8,8 +9,15 @@ import {NgOptimizedImage} from "@angular/common";
     templateUrl: './home.component.html',
     imports: [
         RouterLink,
-        NgOptimizedImage
+        NgOptimizedImage,
+        NgForOf
     ],
     styleUrls: ['./home.component.css']
 })
-export class HomeComponent {}
+export class HomeComponent {
+    pinnedPosts: Post[] = [];
+
+    ngOnInit(): void {
+        this.pinnedPosts = Post.getPinned()
+    }
+}

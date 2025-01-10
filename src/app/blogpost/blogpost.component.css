@@ -1,0 +1,21 @@
+/*
+Not a web UI guy, prefer Compose.
+Because of that, I disable all the default header/paragraph margin in my styles.css.
+But ngx-markdown (https://jfcere.github.io/ngx-markdown) needs margins to look right.
+So here I am re-applying some of that.
+*/
+.postContent {
+  h1,
+  h2,
+  h3,
+  h4,
+  h5,
+  h6 {
+    margin-top: var(--spacing-medium);
+  }
+
+  p {
+    margin: var(--spacing-medium) 0;
+    line-height: 2em;
+  }
+}
