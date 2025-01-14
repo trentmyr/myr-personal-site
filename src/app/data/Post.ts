@@ -57,7 +57,7 @@ export class Post {
      */
     static getAll(): Post[] {
         return [
-            new Post('About Me', new Date(2025, 1, 10), new Date(2025, 1, 10), 'introduction', true)
+            new Post('About Me', new Date(2025, 0, 10), new Date(2025, 0, 10), 'introduction', true)
         ]
     }
 }
